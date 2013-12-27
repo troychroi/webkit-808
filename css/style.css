@@ -118,15 +118,11 @@ p:hover{
     background-color: rgb(146, 137, 137);
 }
 #social-icons{
-    position: absolute;
-    left: 249px;
-    top: -2px;
+    display: inline-block;
+    vertical-align: middle;
 }
 #mobile-support{
     display: none;
-}
-#youtube-vid{
-    /*display: none;*/
 }
 .more-controls{
     float: right;
@@ -154,7 +150,7 @@ p:hover{
 .full-screen-mode .beatNum{
     padding-right: 216px;
 }
-
+/*
 @media only screen and (max-width: 767px){
     .button{
         margin-bottom: 10px;
@@ -167,4 +163,4 @@ p:hover{
     #mobile-support{
         display: block;
     }
-}
+}*/
