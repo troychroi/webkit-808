@@ -279,41 +279,34 @@ $.getJSON('https://webkit-808.firebaseio.com/.json', function(data){
     console.log(data);
 });
 
-// // Pretty Photo
-// $("a[rel^='prettyPhoto']").prettyPhoto({
-//     default_width: 854,
-//     default_height: 510,
-//     social_tools: ''
-// });
-
 // // jQuery Dials
 // $("#buttonForModal").click(function() {
 //   $("#myModal").reveal();
 // });
 
-/**
- * Dropbox Support
- */
-(function(){
+// /**
+//  * Dropbox Support
+//  */
+// (function(){
 
-var files = [];
-var dbChooser = document.getElementById("db-chooser");
-dbChooser.addEventListener("DbxChooserSuccess", function(e) {
+// var files = [];
+// var dbChooser = document.getElementById("db-chooser");
+// dbChooser.addEventListener("DbxChooserSuccess", function(e) {
 
-    e.files.forEach(function(file){
-        files.push(file);
-    });
-    createAudioEl();
-}, false);
+//     e.files.forEach(function(file){
+//         files.push(file);
+//     });
+//     createAudioEl();
+// }, false);
 
-function createAudioEl(){
+// function createAudioEl(){
     
-    var audioEl = document.createElement('audio');
-    audioEl.setAttribute('controls', '');
-    audioEl.setAttribute('src', files[0].link);
+//     var audioEl = document.createElement('audio');
+//     audioEl.setAttribute('controls', '');
+//     audioEl.setAttribute('src', files[0].link);
     
-    document.getElementsByTagName('body')[0].appendChild(audioEl);
+//     document.getElementsByTagName('body')[0].appendChild(audioEl);
 
-}
+// }
 
-})();
+// })();

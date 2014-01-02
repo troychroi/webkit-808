@@ -2,67 +2,261 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+/* line 8, ../scss/screen.scss */
+.play {
+  display: inline-block;
+  margin: 5px;
+  width: 24px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAgCAYAAAAIXrg4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAMZJREFUeNq0lt0NgzAMhIPlfWAR1BXYpDBSxSCFiYr70CqKUH6cO0t+SEC++xxkIvP8eFuOgRRiOVkeJvJkCAxW+BOtD8tl318nkiAOOE1KENA0knkGockRQGik8j03TS2Bm0YcbW2i8RA00UjnZ16k6SUo0ghw7NzSIAluaSRw4k/DEqCcQdqiyVq0KaH4+i38WyjjYONNZbhGChRHhTJc9wo0jWtluPYIuH+ZynBdKwC5tijDdU4AfnVUhutUAO46jkuAAQD+jXZOTODXVwAAAABJRU5ErkJggg==);
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
+/* line 16, ../scss/screen.scss */
+.stop {
+  display: inline-block;
+  margin: 5px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACxJREFUeNrszUERAAAEADD0c/q3UYLfVmDZPfGp4plAIBAIBAKBQCC4sgIMAJggASlttpE8AAAAAElFTkSuQmCC);
+}
+
+/* line 24, ../scss/screen.scss */
+p:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 29, ../scss/screen.scss */
+.wrap {
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
+/* line 36, ../scss/screen.scss */
+.dropdown ul {
+  width: 100% !important;
+}
+
+/* line 39, ../scss/screen.scss */
+p:hover {
+  cursor: default;
+  opacity: 1;
+}
+
+/* line 43, ../scss/screen.scss */
+.label {
+  border-radius: 5px;
+  margin-right: 6px;
+}
+
+/* line 47, ../scss/screen.scss */
+.label:hover {
+  cursor: pointer;
+}
+
+/* line 50, ../scss/screen.scss */
+#bottomRow {
+  margin-bottom: 1px;
+}
+
+/* line 53, ../scss/screen.scss */
+.beatNum {
+  padding-right: 133px;
+}
+
+/* line 56, ../scss/screen.scss */
+#panel {
+  position: relative;
+}
+
+/* line 59, ../scss/screen.scss */
+#panel p {
+  padding-left: 10px;
+}
+
+/* line 62, ../scss/screen.scss */
+#mutes {
+  position: absolute;
+  left: 9px;
+  top: 25px;
+}
+
+/* line 67, ../scss/screen.scss */
+#mutes a {
+  color: #fff;
+}
+
+/* line 70, ../scss/screen.scss */
+.mute-button {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
   line-height: 1;
-}
-
-/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  white-space: nowrap;
   display: block;
+  position: relative;
+  bottom: 1px;
+  color: #fff;
+  background: rgba(146, 146, 146, 0.4);
+  margin-bottom: 25px;
+  padding: 2px;
+}
+
+/* line 85, ../scss/screen.scss */
+.mute-button:hover, .active {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  bottom: 1px;
+  color: #fff;
+  background: #929292;
+  margin-bottom: 25px;
+  padding: 2px;
+}
+
+/* line 100, ../scss/screen.scss */
+#clears {
+  position: absolute;
+  right: 9px;
+  top: 25px;
+}
+
+/* line 105, ../scss/screen.scss */
+#clears a {
+  color: #444;
+}
+
+/* line 108, ../scss/screen.scss */
+.clear-button {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  bottom: 1px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.4);
+  margin-bottom: 26px;
+  padding: 0px 2px 3px;
+  border-radius: 35px;
+}
+
+/* line 124, ../scss/screen.scss */
+.muted {
+  background-color: #928989;
+}
+
+/* line 128, ../scss/screen.scss */
+#mobile-support {
+  display: none;
+}
+
+/* line 131, ../scss/screen.scss */
+#youtube-vid {
+  /*display: none;*/
+}
+
+/* line 134, ../scss/screen.scss */
+.more-controls {
+  float: right;
+  margin: 20px;
+  display: none;
+}
+
+/* line 139, ../scss/screen.scss */
+.ui-selecting {
+  background: #FECA40;
+}
+
+/* line 140, ../scss/screen.scss */
+.ui-selected {
+  background: #c60f13;
+}
+
+/* line 142, ../scss/screen.scss */
+.button.large {
+  font-size: 17px;
+  padding: 15px 24px 10px;
+}
+
+/* line 146, ../scss/screen.scss */
+.full-screen-mode #panel p {
+  margin: 10px 0px 32px 0px;
+}
+
+/* line 149, ../scss/screen.scss */
+.full-screen-mode .mute-button {
+  margin-bottom: 41px;
+}
+
+/* line 152, ../scss/screen.scss */
+.full-screen-mode .clear-button {
+  margin-bottom: 41px;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+/* line 157, ../scss/screen.scss */
+.full-screen-mode .beatNum {
+  padding-right: 216px;
+}
+
+/* line 161, ../scss/screen.scss */
+.blocks {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* line 165, ../scss/screen.scss */
+.step {
+  width: 100px;
+  height: 100px;
+  display: block;
+  float: left;
+  margin: 10px;
+  background-color: #3333ff;
+}
+
+/* line 173, ../scss/screen.scss */
+.step:hover {
+  transition: background-color 1s ease;
+  background-color: #00cccc;
+}
+
+/* line 177, ../scss/screen.scss */
+.button-group li {
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 182, ../scss/screen.scss */
+  .button {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 649px) {
+  /* line 187, ../scss/screen.scss */
+  .four, .eight, #controls {
+    display: none;
+  }
+
+  /* line 190, ../scss/screen.scss */
+  #mobile-support {
+    display: block;
+  }
 }
